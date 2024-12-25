@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин Пингвинов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Магазин Пингвинов</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#shop">Каталог</a></li>
+                    <li><a href="#order">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="info">
+        <div class="container">
+            <h2>О пингвинах</h2>
+            <p>Пингвины — это удивительные существа! Мы предлагаем вам уникальную возможность приобрести фигурки пингвинов.</p>
+        </div>
+    </section>
+
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2>Наш ассортимент</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/originals/68/c0/39/68c0392f474997b4d2937e571cf7a665.jpg" alt="Рядовой">
+                    <h3>Рядовой</h3>
+                    <p>Цена: 1000 ₽</p>
+                    <button onclick="addToCart('Рядовой', 1000)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://sun9-1.userapi.com/impf/c858032/v858032739/3f599/V8LNSsnp4QA.jpg?size=604x604&quality=96&sign=14c7fd05341a9d7ee158b15fd9f38708&type=album" alt="Ковальски">
+                    <h3>Ковальски</h3>
+                    <p>Цена: 1200 ₽</p>
+                    <button onclick="addToCart('Ковальски', 1200)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://otvet.imgsmail.ru/download/75106222_afadc0c3ebe025a6c4a4c0cd125045df_800.jpg" alt="Шкипер">
+                    <h3>Шкипер</h3>
+                    <p>Цена: 1500 ₽</p>
+                    <button onclick="addToCart('Шкипер', 1500)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.live.vkplay.ru/user/18516697/avatar?change_time=1698053730" alt="Рико">
+                    <h3>Рико</h3>
+                    <p>Цена: 2000 ₽</p>
+                    <button onclick="addToCart('Рико', 2000)">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Оформить заказ</h2>
+            <div id="cart">
+                <p>Ваша корзина пуста.</p>
+            </div>
+            <button onclick="checkout()">Оформить заказ</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Магазин Пингвинов</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
